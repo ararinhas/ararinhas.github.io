@@ -2,17 +2,20 @@
     <div class="template d-flex flex-column align-items-center">
         <landing />
         <glioblastoma />
+        <contato />
     </div>
 </template>
 
 <script>
     import Landing from '../components/Inicio/Landing';
     import Glioblastoma from '../components/Inicio/Glioblastoma';
+    import Contato from '../components/Inicio/Contato';
 
     export default {
         components: {
             'landing': Landing,
             'glioblastoma': Glioblastoma,
+            'contato': Contato,
         },
     }
 </script>
@@ -41,5 +44,9 @@
         #inicio {
             padding-top: 70px!important;
         }
+    }
+    h2,h3 {
+        font-weight: 400;
+        font-family: HammersmithOne, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 </style>
