@@ -14,6 +14,7 @@ export default new Router({
             path: '/',
             parent: null,
             navbar: true,
+            always_show: true,
             component: Inicio,
         },
         {
@@ -30,6 +31,7 @@ export default new Router({
             path: '/contato',
             parent: null,
             navbar: true,
+            always_show: true,
             component: null,
         },
         {
@@ -38,6 +40,7 @@ export default new Router({
             path: '/historia',
             parent: null,
             navbar: true,
+            always_show: true,
             component: null,
         },
         {
@@ -62,6 +65,7 @@ export default new Router({
             path: '/apoie',
             parent: null,
             navbar: true,
+            always_show: true,
             component: null,
         },
         {
