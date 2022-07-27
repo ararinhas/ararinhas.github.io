@@ -1,5 +1,5 @@
 <template>
-    <div id="glioblastoma" class="d-flex justify-content-center align-items-center w-100">
+    <div id="glioblastoma" class="d-flex justify-content-center align-items-center w-100 pt-5">
         <div class="d-flex justify-content-center align-items-center holder-1">
             <v-img width="110" height="110" c="img-1" alt="Glioblastoma" draggable="false"
                 src="@/assets/images/glioblastoma.png" />
@@ -10,7 +10,7 @@
         </div>
 
         <div class="mbox-holder">
-            <div class="d-flex flex-column mbox mr-auto mt-5 mb-5">
+            <div class="d-flex flex-column mbox mr-auto mt-5">
                 <div class="header p-3 px-5 m-3 mr-4">
                     <h2>Glioblastoma</h2>
                 </div>
@@ -57,6 +57,7 @@
         margin-left: -2.85rem;
         position: relative;
         background: #eee;
+        margin-bottom: 2rem;
     }
     .mbox .header {
         background: #D9D9D9;
@@ -67,6 +68,11 @@
     }
     .mbox-holder{
         margin-right: auto;
+    }
+    @media (min-width: 745px) {
+        .mbox{
+            margin-bottom: 4rem;
+        }
     }
     @media (min-width: 992px) {
         .holder-1 {
