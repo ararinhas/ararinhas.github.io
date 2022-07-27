@@ -1,0 +1,62 @@
+<template>
+    <i :class="`icon-${name}`"></i>
+</template>
+
+<script>
+    export default {
+        props: [ 'name' ]   
+    }
+</script>
+
+<style scoped>
+@font-face {
+    font-family: 'fontello';
+    src: url('~@/assets/fonts/fontello/fontello.woff2?1') format('woff2'),
+    url('~@/assets/fonts/fontello/fontello.woff?1') format('woff'),
+    url('~@/assets/fonts/fontello/fontello.ttf?1') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+
+    .icon-bars:before { content: '\e800'; } /* '' */
+    .icon-envelope:before { content: '\e801'; } /* '' */
+    .icon-map-marker:before { content: '\e802'; } /* '' */
+    .icon-phone:before { content: '\e803'; } /* '' */
+    .icon-times:before { content: '\e804'; } /* '' */
+
+</style>
