@@ -15,11 +15,25 @@
 </script>
 
 <style>
-
-    body.loading::after {
-        opacity: 0!important;
+    @font-face {
+        font-family: GlacialIndifference;
+        src: /* webpackIgnore: true */ url('/fonts/GlacialIndifference.woff2') format('woff2'),
+            /* webpackIgnore: true */ url('/fonts/GlacialIndifference.woff') format('woff'),
+            /* webpackIgnore: true */ url('/fonts/GlacialIndifference.ttf') format('truetype');
+        font-display: swap;
     }
-    
+    @font-face {
+        font-family: HammersmithOne;
+        src: /* webpackIgnore: true */ url('/fonts/HammersmithOne-Regular.woff2') format('woff2'),
+            /* webpackIgnore: true */ url('/fonts/HammersmithOne-Regular.woff') format('woff'),
+            /* webpackIgnore: true */ url('/fonts/HammersmithOne-Regular.ttf') format('truetype');
+        font-display: swap;
+    }
+
+    body {
+        font-family: GlacialIndifference, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
     .btn {
         text-decoration: none!important;
         outline: none!important;

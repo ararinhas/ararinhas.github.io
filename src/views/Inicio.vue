@@ -31,11 +31,11 @@
 </style>
 
 <style>
-    #landing {
+    #inicio {
         padding-top: 42px!important;
     }
     @media (min-width: 992px) {
-        #landing {
+        #inicio {
             padding-top: 70px!important;
         }
     }

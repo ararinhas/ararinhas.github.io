@@ -121,7 +121,7 @@
     .x-nav-item-always {
         color: #000;
         text-align: left;
-        font-size: .875rem;
+        font-size: 1rem;
         padding: 0.3rem;
         font-weight: 600;
         text-transform: uppercase;
@@ -180,7 +180,7 @@
             margin-left: 0;
             margin-right: 0;
             position: relative;
-            font-size: 1.25rem;
+            font-size: 1.35rem;
         }
 
         .x-nav-item:hover::after {
