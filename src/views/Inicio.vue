@@ -1,15 +1,18 @@
 <template>
     <div class="template d-flex flex-column align-items-center">
         <landing />
+        <glioblastoma />
     </div>
 </template>
 
 <script>
     import Landing from '../components/Inicio/Landing';
+    import Glioblastoma from '../components/Inicio/Glioblastoma';
 
     export default {
         components: {
             'landing': Landing,
+            'glioblastoma': Glioblastoma,
         },
     }
 </script>

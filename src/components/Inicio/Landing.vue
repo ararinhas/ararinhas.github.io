@@ -3,7 +3,7 @@
         <v-img width="275" height="275" alt="Logo" draggable="false"
                 src="@/assets/images/logo.png" />
         <h1 class="mb-0">Ararinhas UFF</h1>
-        <p class="text-center mb-0">1° equipe de Biologia Sintética da Universidade Federal Fluminense</p>
+        <p class="text-center mb-0" style="max-width: 15rem">1° equipe de Biologia Sintética da Universidade Federal Fluminense</p>
     </div>
 </template>
 
