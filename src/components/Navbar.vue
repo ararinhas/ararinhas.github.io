@@ -2,7 +2,7 @@
     <div class="navbar-holder">
         <div class="x-navbar" :class="{ 'x-navbar-collapsed': !visible }">
 
-            <div class="d-flex w-100 align-items-center">
+            <div class="d-flex w-100 align-items-center x-nav-wrapper">
                 <div class="d-flex flex-grow-1 justify-content-center d-lg-none">
                     <div class="x-nav-item-always" v-for="page in pages_always" :key="page.pos" @click="gotoPage(page)">{{ page.name }}</div>
                 </div>
@@ -80,11 +80,18 @@
         text-align: right;
     }
 
+    .x-nav-wrapper {
+        max-height: 42px;
+    }
+
     @media (min-width: 992px) {
         .navbar-holder {
             display: flex;
             justify-content: center;
             min-height: 70px;
+        }
+        .x-nav-wrapper {
+            max-height: auto;
         }
     }
 </style>
@@ -156,6 +163,9 @@
             width: 100%;
             min-height: unset;
             transition: unset;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
         }
             
         .x-navbar-nav {
