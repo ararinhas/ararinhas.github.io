@@ -3,6 +3,7 @@
         <landing />
         <glioblastoma />
         <contato />
+        <historia />
     </div>
 </template>
 
@@ -10,12 +11,14 @@
     import Landing from '../components/Inicio/Landing';
     import Glioblastoma from '../components/Inicio/Glioblastoma';
     import Contato from '../components/Inicio/Contato';
+    import Historia from '../components/Inicio/Historia';
 
     export default {
         components: {
             'landing': Landing,
             'glioblastoma': Glioblastoma,
             'contato': Contato,
+            'historia': Historia,
         },
     }
 </script>
