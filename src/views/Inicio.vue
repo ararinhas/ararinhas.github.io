@@ -9,6 +9,7 @@
         <redes-sociais />
         <apoie />
         <pesquisador />
+        <entre-para-o-time />
     </div>
 </template>
 
@@ -22,6 +23,7 @@
     import RedesSociais from '../components/Inicio/RedesSociais';
     import Apoie from '../components/Inicio/Apoie';
     import Pesquisador from '../components/Inicio/Pesquisador';
+    import EntreProTime from '../components/Inicio/EntreProTime';
 
     export default {
         components: {
@@ -34,6 +36,7 @@
             'redes-sociais': RedesSociais,
             'apoie': Apoie,
             'pesquisador': Pesquisador,
+            'entre-para-o-time': EntreProTime,
         },
     }
 </script>
