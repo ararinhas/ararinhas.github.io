@@ -29,9 +29,28 @@
                         />
                 </a>
             </div>
+
+            <div class="d-flex social justify-content-center w-100 my-3">
+                <a href="https://www.instagram.com/ararinhasuff/" target="_blank" rel="noopener">
+                    <icon class="x-icon" style="margin-right: -.25rem" name="instagram" /> @ararinhasuff
+                </a>
+
+                <a href="https://linkedin.com/in/ararinhasuff" target="_blank" rel="noopener">
+                    <icon class="x-icon" style="margin-right: -.25rem" name="linkedin" /> ararinhasuff
+                </a>
+            </div>
         </div>
     </div>
 </template>
+
+<script>
+import Icon from '../Icon.vue';
+export default {
+    components: {
+        'icon': Icon,
+    },
+}
+</script>
 
 <style>
     #redes-sociais {
@@ -67,6 +86,18 @@
     }
     a {
         width: 100%;
+        text-decoration: none!important;
+        color: inherit!important;
+    }
+    .social {
+        font-size: 1.3rem;
+    }
+    .social a {
+        width: auto;
+        margin-right: 1rem;
+    }
+    .social a:last-child {
+        margin-right: 0;
     }
     @media (min-width: 37rem) {
         p {
@@ -75,6 +106,12 @@
         .posts {
             padding-left: .5rem;
             padding-right: .5rem;
+        }
+        .social {
+            font-size: 1.75rem;
+        }
+        .social a {
+            margin-right: 2rem;
         }
     }
 </style>

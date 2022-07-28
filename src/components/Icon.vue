@@ -11,9 +11,9 @@
 <style scoped>
 @font-face {
     font-family: 'fontello';
-    src: url('~@/assets/fonts/fontello/fontello.woff2?1') format('woff2'),
-    url('~@/assets/fonts/fontello/fontello.woff?1') format('woff'),
-    url('~@/assets/fonts/fontello/fontello.ttf?1') format('truetype');
+    src: url('~@/assets/fonts/fontello/fontello.woff2?2') format('woff2'),
+    url('~@/assets/fonts/fontello/fontello.woff?2') format('woff'),
+    url('~@/assets/fonts/fontello/fontello.ttf?2') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -58,5 +58,7 @@
     .icon-map-marker:before { content: '\e802'; } /* '' */
     .icon-phone:before { content: '\e803'; } /* '' */
     .icon-times:before { content: '\e804'; } /* '' */
+    .icon-instagram:before { content: '\e805'; } /* '' */
+    .icon-linkedin:before { content: '\e806'; } /* '' */
 
 </style>

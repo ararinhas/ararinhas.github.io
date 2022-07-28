@@ -6,7 +6,6 @@
                 <div class="d-flex x-item" v-for="c in contatos" :key="c.text">
                     <icon class="x-icon" :name="c.icon" />
                     <div class="d-flex flex-column">
-                        
                         <p class="mb-0 x-text"><a :href="c.href" target="_blank">{{ c.text }}</a></p>
                         <p class="mb-0 x-hint text-muted" v-if="c.hint">{{ c.hint }}</p>
                     </div>
