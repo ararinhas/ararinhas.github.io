@@ -5,6 +5,7 @@
         <contato />
         <historia />
         <linha-do-tempo />
+        <ano-2022 />
     </div>
 </template>
 
@@ -14,6 +15,7 @@
     import Contato from '../components/Inicio/Contato';
     import Historia from '../components/Inicio/Historia';
     import LinhaDoTempo from '../components/Inicio/LinhaDoTempo';
+    import Ano2022 from '../components/Inicio/Ano2022';
 
     export default {
         components: {
@@ -22,6 +24,7 @@
             'contato': Contato,
             'historia': Historia,
             'linha-do-tempo': LinhaDoTempo,
+            'ano-2022': Ano2022,
         },
     }
 </script>

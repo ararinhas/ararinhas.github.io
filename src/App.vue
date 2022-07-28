@@ -41,7 +41,7 @@
     .btn:not(.btn-link) {
         text-transform: uppercase;
         border-radius: .75rem;
-        box-shadow: -2px 4px 10px rgba(255, 0, 0, 0.75)!important;
+        /* box-shadow: -2px 4px 10px rgba(255, 0, 0, 0.75)!important; */
         outline: none!important;
         padding-top: .75rem;
         padding-bottom: .6rem;

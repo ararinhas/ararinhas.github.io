@@ -14,7 +14,7 @@
 <style>
     #linha-do-tempo {
         margin-top: 1rem;
-        padding-top: 2rem;
+        padding-top: 3.5rem;
         background: #000;
         color: #fff;
     }
