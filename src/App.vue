@@ -54,17 +54,22 @@
         box-shadow: 0px 2px 4px rgba(255, 255, 0, 0.5)!important;
     }
 
+    .btn-f {
+        font-family: HammersmithOne, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-transform: none!important;
+    }
+
     .btn-primary {
-        background-color: #f00!important;
-        border-color: #f00!important;
+        background-color: #2474ed!important;
+        border-color: #2474ed!important;
     }
     .btn-primary:hover {
-        background-color: #c00!important;
-        border-color: #c00!important;
+        background-color: #408bfe!important;
+        border-color: #408bfe!important;
     }
     .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-        background-color: #900!important;
-        border-color: #900!important;
+        background-color: #003480!important;
+        border-color: #003480!important;
     }
     .btn-primary.disabled, .btn-primary:disabled {
         background-color: #555!important;
@@ -72,10 +77,10 @@
     }
 
     .btn-link {
-        color: #f00!important;
+        color: #2474ed!important;
         box-shadow: unset!important;
     }
     .btn-link:hover {
-        color: #c00!important;
+        color: #003480!important;
     }
 </style>

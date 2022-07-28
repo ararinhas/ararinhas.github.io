@@ -7,6 +7,7 @@
         <linha-do-tempo />
         <ano-2022 />
         <redes-sociais />
+        <apoie />
     </div>
 </template>
 
@@ -18,6 +19,7 @@
     import LinhaDoTempo from '../components/Inicio/LinhaDoTempo';
     import Ano2022 from '../components/Inicio/Ano2022';
     import RedesSociais from '../components/Inicio/RedesSociais';
+    import Apoie from '../components/Inicio/Apoie';
 
     export default {
         components: {
@@ -28,6 +30,7 @@
             'linha-do-tempo': LinhaDoTempo,
             'ano-2022': Ano2022,
             'redes-sociais': RedesSociais,
+            'apoie': Apoie,
         },
     }
 </script>

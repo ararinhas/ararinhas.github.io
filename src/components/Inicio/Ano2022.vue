@@ -70,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="btn btn-outline-primary" @click="show_all = !show_all">
+            <div class="btn btn-f btn-outline-primary" @click="show_all = !show_all">
                 <span v-if="!show_all">Ver mais</span>
                 <span v-else>Ver menos</span>
             </div>
