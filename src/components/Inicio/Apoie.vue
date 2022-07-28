@@ -92,9 +92,11 @@
     .holder {
         max-width: 20rem;
     }
-    b {
+    h4, b {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 600;
+    }
+    b {
+        font-weight: 700;
         font-size: 90%;
     }
     .item-holder {
@@ -122,6 +124,7 @@
         text-transform: uppercase;
         line-height: 1.1;
         font-size: 1.35rem;
+        font-weight: 400;
     }
     .mbox {
         background: rgba(255, 255, 255, 0.5);
