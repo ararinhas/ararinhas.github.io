@@ -1,5 +1,5 @@
 <template>
-    <div id="ano-2022" class="d-flex flex-column justify-content-center align-items-center w-100">
+    <div id="ano-2022" class="d-flex flex-column justify-content-center align-items-center w-100 pb-3">
         <h2 class="px-2 w-100 text-center">Ararinhas em 2022</h2>
         
         <div class="d-flex flex-column">
