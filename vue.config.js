@@ -28,8 +28,8 @@ module.exports = {
                 minimizerOptions: {
                     plugins: [
                         'svgo',
-                        ['pngquant', { speed: 1, quality: [0.80, 0.90], strip: true }],
-                        ['optipng', { optimizationLevel: 6 }],
+                        ['pngquant', { speed: 1, quality: [0.90, 0.90], strip: true }],
+                        ['optipng', { optimizationLevel: 5 }],
                         ['pngcrush', { reduce: true }],
                         // [ 'advpng', { optimizationLevel: 4 } ],
                     ],
@@ -41,7 +41,7 @@ module.exports = {
                 config: [{
                     test: /\.(jpe?g|png)/,
                     options: {
-                        quality: 85
+                        quality: 9
                     }
                 }],
                 overrideExtension: false,

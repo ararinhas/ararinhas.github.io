@@ -1,18 +1,18 @@
 <template>
     <picture>
-        <source v-if="!t_src" type="image/webp" :srcset="_2x == null ? `${src}.webp` : `${_2x}.webp 2x, ${src}.webp 1x`" :media="mquery_src" />
+        <source v-if="!t_src && !nowebp" type="image/webp" :srcset="_2x == null ? `${src}.webp` : `${_2x}.webp 2x, ${src}.webp 1x`" :media="mquery_src" />
         <source v-if="!t_src" :type="src.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg'" :srcset="_2x == null ? src : `${_2x} 2x, ${src} 1x`" :media="mquery_src" />
 
-        <source v-if="src650w" type="image/webp" :srcset="_2x650w == null ? `${src650w}.webp` : `${_2x650w}.webp 2x, ${src650w}.webp 1x`" :media="mquery_650w" />
+        <source v-if="src650w && !nowebp" type="image/webp" :srcset="_2x650w == null ? `${src650w}.webp` : `${_2x650w}.webp 2x, ${src650w}.webp 1x`" :media="mquery_650w" />
         <source v-if="src650w" :type="src650w.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg'" :srcset="_2x650w == null ? src650w : `${_2x650w} 2x, ${src650w} 1x`" :media="mquery_650w" />
 
-        <source v-if="src992w" type="image/webp" :srcset="_2x992w == null ? `${src992w}.webp` : `${_2x992w}.webp 2x, ${src992w}.webp 1x`" :media="mquery_992w" />
+        <source v-if="src992w && !nowebp" type="image/webp" :srcset="_2x992w == null ? `${src992w}.webp` : `${_2x992w}.webp 2x, ${src992w}.webp 1x`" :media="mquery_992w" />
         <source v-if="src992w" :type="src992w.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg'" :srcset="_2x992w == null ? src992w : `${_2x992w} 2x, ${src992w} 1x`" :media="mquery_992w" />
         
-        <source v-if="src1280w" type="image/webp" :srcset="_2x1280w == null ? `${src1280w}.webp` : `${_2x1280w}.webp 2x, ${src1280w}.webp 1x`" :media="mquery_1280w" />
+        <source v-if="src1280w && !nowebp" type="image/webp" :srcset="_2x1280w == null ? `${src1280w}.webp` : `${_2x1280w}.webp 2x, ${src1280w}.webp 1x`" :media="mquery_1280w" />
         <source v-if="src1280w" :type="src1280w.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg'" :srcset="_2x1280w == null ? src1280w : `${_2x1280w} 2x, ${src1280w} 1x`" :media="mquery_1280w" />
         
-        <source v-if="src1600w" type="image/webp" :srcset="_2x1600w == null ? `${src1600w}.webp` : `${_2x1600w}.webp 2x, ${src1600w}.webp 1x`" :media="mquery_1600w" />
+        <source v-if="src1600w && !nowebp" type="image/webp" :srcset="_2x1600w == null ? `${src1600w}.webp` : `${_2x1600w}.webp 2x, ${src1600w}.webp 1x`" :media="mquery_1600w" />
         <source v-if="src1600w" :type="src1600w.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg'" :srcset="_2x1600w == null ? src1600w : `${_2x1600w} 2x, ${src1600w} 1x`" :media="mquery_1600w" />
         
         <img :src="t_src ? t_src : src" :class="m_class" :style="s" v-bind="m_attrs" />
@@ -22,7 +22,7 @@
     import isWebpSupported from '../../utils/webp-supported';
 
     export default {
-        props: [ 'c', 's', 'src', '_2x', 'thumb', 'src650w', '_2x650w', 'src992w', '_2x992w', 'src1280w', '_2x1280w', 'src1600w', '_2x1600w' ],
+        props: [ 'c', 's', 'src', '_2x', 'thumb', 'src650w', '_2x650w', 'src992w', '_2x992w', 'src1280w', '_2x1280w', 'src1600w', '_2x1600w', 'nowebp' ],
         inheritAttrs: false,
         computed: {
             m_class(){
@@ -95,7 +95,7 @@
                 }
                 else
                 {
-                    const webp = await isWebpSupported();
+                    const webp = await isWebpSupported() && !this.nowebp;
                     const retina = window.matchMedia('(-webkit-min-device-pixel-ratio: 2)').matches;
 
                     let src = null;

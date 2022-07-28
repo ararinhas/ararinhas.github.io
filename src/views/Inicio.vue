@@ -4,6 +4,7 @@
         <glioblastoma />
         <contato />
         <historia />
+        <linha-do-tempo />
     </div>
 </template>
 
@@ -12,6 +13,7 @@
     import Glioblastoma from '../components/Inicio/Glioblastoma';
     import Contato from '../components/Inicio/Contato';
     import Historia from '../components/Inicio/Historia';
+    import LinhaDoTempo from '../components/Inicio/LinhaDoTempo';
 
     export default {
         components: {
@@ -19,6 +21,7 @@
             'glioblastoma': Glioblastoma,
             'contato': Contato,
             'historia': Historia,
+            'linha-do-tempo': LinhaDoTempo,
         },
     }
 </script>
