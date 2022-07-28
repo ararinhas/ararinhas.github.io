@@ -8,6 +8,7 @@
         <ano-2022 />
         <redes-sociais />
         <apoie />
+        <pesquisador />
     </div>
 </template>
 
@@ -20,6 +21,7 @@
     import Ano2022 from '../components/Inicio/Ano2022';
     import RedesSociais from '../components/Inicio/RedesSociais';
     import Apoie from '../components/Inicio/Apoie';
+    import Pesquisador from '../components/Inicio/Pesquisador';
 
     export default {
         components: {
@@ -31,6 +33,7 @@
             'ano-2022': Ano2022,
             'redes-sociais': RedesSociais,
             'apoie': Apoie,
+            'pesquisador': Pesquisador,
         },
     }
 </script>
