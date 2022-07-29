@@ -26,7 +26,9 @@
                     <h3 class="d-none">iGEM Design League</h3>
 
                     <v-img width="224" height="109" alt="iGEM Design League" draggable="false"
-                            src="@/assets/images/igem-dl.png" class="x-img mb-4 pr-3" />
+                            src="@/assets/images/igem-dl.png"
+                            _2x="@/assets/images/igem-dl@2x.png"
+                            class="x-img mb-4 pr-3" :nowebp="true" />
 
                     <p class="px-2 text-igem">
                         O International Genetically Engineered Machine - iGEM é a <span class="highlight">maior competição de biologia sintética do mundo</span> e é organizada anualmente pela iGEM Foundation.

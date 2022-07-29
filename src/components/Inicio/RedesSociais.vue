@@ -11,13 +11,15 @@
                     <a href="https://www.instagram.com/p/CSnG4yRAmtA/" target="_blank" rel="noopener" class="mr-1">
                         <v-img width="150" height="150" alt="K-Herc: bactérias para o bem" draggable="false" c="x-img-1"
                             src="@/assets/images/post1.jpg"
-                            class="x-img-1-w"
+                            _2x="@/assets/images/post1@2x.jpg"
+                            class="x-img-1-w" :nowebp="true"
                             />
                     </a>
                     <a href="https://www.instagram.com/p/CdmGBcurCzr/" target="_blank" rel="noopener">
                         <v-img width="150" height="150" alt="O que é biologia molecular / sintética? Conheça um pouco sobre a área da biologia que trabalhamos!" draggable="false" c="x-img-1"
                             src="@/assets/images/post2.jpg"
-                            class="x-img-1-w"
+                            _2x="@/assets/images/post2@2x.jpg"
+                            class="x-img-1-w" :nowebp="true"
                             />
                     </a>
                 </div>
@@ -25,7 +27,8 @@
                 <a href="https://www.instagram.com/p/Cd4NY9qLlrY/" target="_blank" rel="noopener">
                     <v-img width="304" height="304" alt="Conhecendo os desafios da biologia sintética: um pouco sobre como apresentamos a biologia sintética" draggable="false" c="x-img-2"
                         src="@/assets/images/post3.jpg"
-                        class="x-img-2-w"
+                        _2x="@/assets/images/post3@2x.jpg"
+                        class="x-img-2-w" :nowebp="true"
                         />
                 </a>
             </div>
