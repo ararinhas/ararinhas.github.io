@@ -2,7 +2,8 @@
     <div id="glioblastoma" class="d-flex justify-content-center align-items-center w-100 pt-5">
         <div class="d-flex justify-content-center align-items-center holder-1">
             <v-img width="110" height="110" c="img-1" alt="Glioblastoma" draggable="false"
-                src="@/assets/images/glioblastoma.png" />
+                src="@/assets/images/glioblastoma.png"
+                _2x="@/assets/images/glioblastoma@2x.png" :nowebp="true" />
             <div class="d-flex flex-column pl-2">
                 <h3 class="mb-0">Ararinhas UFF</h3>
                 <p class="mb-0">Somos uma equipe de Biologia Sintética que desenvolve um projeto de um biofármaco para o tratamento de glioblastoma.</p>

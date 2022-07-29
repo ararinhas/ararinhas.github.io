@@ -1,8 +1,9 @@
 <template>
     <div id="inicio" class="d-flex flex-column justify-content-center align-items-center w-100">
         <v-img width="275" height="275" alt="Logo" draggable="false"
-                src="@/assets/images/logo.png" />
-        <h1 class="mb-0">Ararinhas UFF</h1>
+                src="@/assets/images/logo.png"
+                _2x="@/assets/images/logo@2x.png" :nowebp="true" />
+        <h1 class="mb-0 mt-1">Ararinhas UFF</h1>
         <p class="text-center mb-0" style="max-width: 15rem">1° equipe de Biologia Sintética da Universidade Federal Fluminense</p>
     </div>
 </template>
