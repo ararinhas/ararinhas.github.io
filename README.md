@@ -40,3 +40,13 @@ Após alguns minutos o site estará atualizado no ar.
 ## Windows
 
 Para o desenvolvimento do projeto foi utilizado o macOS 12.4. Com certeza funciona em distros Linux atualizadas, dado que estas também são POSIX. Entretanto, não foi testado no Windows. Caso precise utilizar com Windows e tenha problemas, tente utilizar o [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install).
+
+
+## Como configurar um domínio personalizado no GitHub pages
+
+Até o presente momento o site do projeto é acessível através do domínio gratuito provido pelo GitHub pages ([https://ararinhas.github.io](https://ararinhas.github.io)). Entretanto, caso no futuro seja interessante partir para um domínio personalizado (por exemplo, um https://ararinhas.com.br da vida), não é necessário contratar uma hospedagem. O GitHub Pages permite a configuração de domínios personalizados de maneira gratuita, bastando arcar com o custo de aquisição do domínio em si.
+
+Para configurar o GitHub Pages para usar um domínio personalizado:
+
+1. Adquira o domínio desejado no seu local de preferência. Atenção: para domínios .br o local correto para fazer essa aquisição é no [Registro.br](https:/registro.br)
+2. Siga as instruções disponíveis na [documentação do GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) ([mirror](https://web.archive.org/web/20220622132034/https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
