@@ -45,21 +45,19 @@
     .template {
         min-width: 100%;
         max-width: 100%;
-        min-height: calc(100vh - 42px);
-        /* margin-top: 42px!important; */
+        min-height: calc(100vh - 50px);
         overflow: hidden;
     }
     @media (min-width: 992px) {
         .template {
             min-height: calc(100vh - 70px);
-            /* margin-top: 70px!important; */
         }
     }
 </style>
 
 <style>
     #inicio {
-        padding-top: 42px!important;
+        padding-top: 50px!important;
     }
     @media (min-width: 992px) {
         #inicio {

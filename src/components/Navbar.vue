@@ -67,7 +67,7 @@
 
     .navbar-holder {
         min-width: 100%;
-        min-height: 42px;
+        min-height: 50px;
         position: fixed;
         top: 0;
         z-index: 1000;
@@ -81,7 +81,7 @@
     }
 
     .x-nav-wrapper {
-        max-height: 42px;
+        max-height: 50px;
     }
 
     @media (min-width: 992px) {
